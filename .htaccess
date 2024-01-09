@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+<Directory "/path/to/your/laravel/project">
+    Options FollowSymLinks
+    AllowOverride All
+    Require all granted
+</Directory>
